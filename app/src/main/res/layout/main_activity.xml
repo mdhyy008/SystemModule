@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="7dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="设备信息"
+						android:textColor="#000000"
+						android:id="@+id/main_activityTextView0"/>
+
+					<TextView
+						android:layout_height="match_parent"
+						android:layout_width="match_parent"
+						android:layout_alignParentRight="true"
+						android:text="正在检测..."
+						android:gravity="center"
+						android:paddingRight="10dp"
+						android:textSize="12sp"
+						android:id="@+id/main_info"
+						android:layout_margin="5dp"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="7dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="原生Android"
+						android:textColor="#000000"/>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="叹号杀手(去除WiFi旁边叹号)"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="去除"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="repairWifi"/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="自动时间校准"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="校准"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="repairTime"/>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="7dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="MIUI"
+						android:textColor="#000000"/>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="低内存优化"
+							android:id="@+id/main_lowmomery"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="优化"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="lowMemory"/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="通知栏搜索框"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="去除"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="delSearch"/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="MIUI全家桶清理"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:id="@+id/delmiuiapp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="一键清理"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="delMIUIApp"/>
+
+					</RelativeLayout>
+					
+					
+					
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardCornerRadius="7dp">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:background="#e5e5e5"
+						android:padding="5dp"
+						android:textStyle="bold"
+						android:layout_height="wrap_content"
+						android:text="通用"
+						android:textColor="#000000"/>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="QQ精简"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="精简"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="SimplifyQQ"/>
+
+					</RelativeLayout>
+
+					<RelativeLayout
+						android:layout_height="50dp"
+						android:layout_width="match_parent"
+						android:background="?android:attr/selectableItemBackgroundBorderless"
+						android:layout_centerInParent="true"
+						android:clickable="true">
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:text="全屏沉浸模式"
+							android:gravity="center"
+							android:textSize="10sp"
+							android:paddingLeft="10dp"/>
+
+						<TextView
+							android:layout_height="match_parent"
+							android:layout_width="wrap_content"
+							android:layout_alignParentRight="true"
+							android:text="开启/关闭"
+							android:paddingRight="10dp"
+							android:textSize="12sp"
+							style="@style/Widget.AppCompat.Button.Colored"
+							android:onClick="Immerse"/>
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+
