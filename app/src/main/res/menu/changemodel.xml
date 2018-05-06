@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/vivoX20"
+        android:title="vivo X20"/>
+    <item
+        android:id="@+id/oppoR11"
+        android:title="oppo R11"/>
+	<item
+        android:id="@+id/iPhoneX"
+        android:title="iPhone X"/>
+	<item
+        android:id="@+id/samsungS9"
+        android:title="samsumg S9+"/>
+	
+	
+	<item
+        android:id="@+id/Titanium8848"
+        android:title="8848钛金手机"/>
+	<item
+        android:id="@+id/GooglePixel"
+        android:title="Google Pixel 2XL"/>
+	<item
+        android:id="@+id/OnePlus5"
+        android:title="OnePlus 5"/>
+	
+	<item
+        
+		android:id="@+id/Mix2s"
+        
+		android:title="小米Mix 2S"/>
+
+	
+</menu>
